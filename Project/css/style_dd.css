@@ -1,0 +1,142 @@
+body {
+	font-weight: 250;
+	font-size : 15px;
+}
+.test {
+	border : 1px solid red;
+}
+.clear{
+	clear:both;
+}
+nav {
+	background-color : rgba(0,0,0,0.6);
+	position: relative;
+	height :48px;
+}
+#navbarResponsive {
+	font-weight: 250;
+	font-size : 20px;
+}
+.logo {
+	text-transform: uppercase;
+	font-size : 38px;
+	font-weight: 900;
+	position: relative;
+	
+}
+.logo span {
+	font-weight: 100;
+	
+}
+
+
+.logo :after {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -9px;
+  background: #DA1212;
+  width: 10px;
+  height: 10px;
+}
+.nut {
+	color : #d60606;
+}
+.nav-link{
+	color :#ededed;
+}
+.dropdown-menu{
+	background-color : rgba(0,0,0,0.3);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	
+}
+.dropdown-item{
+	color : #fff;
+	font-weight: 250;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.9em;
+}
+.phu {
+	transform : px;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  
+}
+#Impo{
+	transition :transform 1s;
+	background-color : #d11919;
+	font-weight : 900;
+	font-family : Bebas Neue ;
+	color : #fff;
+}
+#Impo:hover {
+	display : block;
+	transform: rotateX(360deg);
+	color : #fff;
+	text-shadow : 0px 0px 3px #ff0094;
+}
+
+
+@media only screen and (max-width : 768px) {
+	.fixed-top{
+		position : static;
+		height : auto;
+		background-color : #000;
+	}
+}
+footer hr {
+	
+	border: 0;
+	height: 1px;
+	background: #fff;
+	background-image: -webkit-linear-gradient(left, #333, #ccc, #333);
+	background-image: -moz-linear-gradient(left, #333, #ccc, #333);
+	background-image: -ms-linear-gradient(left, #333, #ccc, #333);
+	background-image: -o-linear-gradient(left, #333, #ccc, #333);
+
+}
+footer h4 {
+	font-weight : 300;
+	text-transform: uppercase;
+}
+footer a{
+	text-decoration:none;
+	color : red;
+}
+footer ul{
+	list-style-type:none;
+}
+.icon-div{
+	float:left;
+	margin-right : 30px;
+	color: red;
+}
+.qc {
+	background-color : #fff;
+	
+}
+.col-sm-3 a img{
+	padding : 20px;
+	width: 310px;
+	height : 125px	;
+}
+.copyright-text{
+	display : block;
+}
+.hotline{
+	color : red;
+	font-weight : 900;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size : 40px;
+}
