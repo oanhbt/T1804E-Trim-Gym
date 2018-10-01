@@ -1,0 +1,96 @@
+body{
+	
+}
+.carousel-item {
+	width:100%;
+	height:500px;
+}
+
+
+#reg{
+	transition: transform 2s;
+	color:#fff;
+	font-weight:900;
+	font-family : Bebas Neue ;
+	background-color : #d11919;
+}
+#reg:hover{
+	transform: rotateX(360deg);
+	
+}
+.col-sm-4 a:hover {
+	text-decoration:none;	
+}
+
+.col-sm-4 h3{
+	text-align:center;
+	margin-top:-60px;
+	color:#d6d6c2;
+}
+
+.branch{
+	margin-top:90px;
+	text-align:center;
+}
+.short-line{
+	width:90px;
+	height:5px;
+	background:red;
+}
+.box{
+	box-shadow: 0px 0px 3px 3px lightgray;
+}
+.box-center{
+	background:
+}
+.center{
+	text-align:center;
+}
+.center p{
+	margin-bottom:0px;
+}
+.center a{
+	background:#d11919;
+	color:#fff;
+	padding:15px;
+	border-radius:5px;
+	font-size:20px;
+	text-decoration:none;
+}
+.center a:hover{
+	background:rgb(255, 128, 128, 0.9);
+}
+.left-trainer{
+	float:left;
+	clear:both;
+}
+.right-trainer{
+	float:right;
+}
+.name-title{
+	border-left:5px solid #dc2930;
+	padding-left:20px;
+}
+.name-title h3{
+	color:#dc2930;
+	font-weight:900;
+}
+.name-title p{
+	font-size:20px;
+}
+.info-trainer{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.info-trainer li:before{
+	content:'';
+	background: #dc2930;
+	width:6px;
+	height:6px;
+	display:inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+    margin-top: -1px;
+}
+
