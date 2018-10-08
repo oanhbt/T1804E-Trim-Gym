@@ -1,0 +1,20 @@
+body{
+	
+}
+
+.content{
+	font-family:self-s;
+	font-size:24px;
+	background:white;
+	float:left;
+	width:70%;
+}
+.slidebar{
+	float:right;
+	width:26%;
+	background:white;
+	
+}
+.clear_all{
+	clear:both;
+}
