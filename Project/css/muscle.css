@@ -3,11 +3,9 @@ body{
 }
 
 .content{
-	font-family:self-s;
-	font-size:24px;
+	font-size:px;
 	background:white;
-	float:left;
-	width:70%;
+	
 }
 .slidebar{
 	float:right;
@@ -17,4 +15,8 @@ body{
 }
 .clear_all{
 	clear:both;
+}
+.nd1 {
+	height : 304px;
+	overflow-y: scroll;
 }
