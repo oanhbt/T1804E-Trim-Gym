@@ -2,13 +2,15 @@
 
 <html>
 	<head>
-		<title>Trim-Gym fitness center</title>
+		<title>Trainer</title>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 		
 		<link rel="stylesheet" href="css/style_dd.css"/>
+		<link rel="stylesheet" href="css/trainer.css"/>
 		<link rel="stylesheet" href="css/home.css"/>
+		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
 		
@@ -39,7 +41,7 @@
 							<li class="nav-item"><a class="dropdown-item" href="#">No3</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="trainer.html">Trainer</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Trainer</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Lich Hoc</a></li>
 					<!-- Tao bang menu phu -->
 					<li class="nav-item dropdown">
@@ -48,7 +50,7 @@
 							<li class="dropdown-submenu">
 								<a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Kinh Nghiem</a>
 								<ul class="dropdown-menu phu">
-									<li><a class="dropdown-item" href="Cardio.html">Cardio</a></li>
+									<li><a class="dropdown-item" href="#">Cardio</a></li>
 									<li><a class="dropdown-item" href="#">Muscle</a></li>
 								</ul>
 							</li>
@@ -62,145 +64,68 @@
 			</div>
 		</nav>
 		<!-- Them noi dung trang o day -->
-		<div id="slider" class="carousel slide" data-ride="carousel">
-			<!--indicators-->
-			<ul class="carousel-indicators">	
-				<li data-target="#slider" data-slide-to="0" class="active"></li>
-				<li data-target="#slider" data-slide-to="1"></li>
-			</ul>
-			<!--slideshow-->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="img/nam.jpg" style="width:100%;"/>
-				</div>
-				<div class="carousel-item">
-					<img src="img/nu.jpg" style="width:100%"/>
-				</div>
-			</div>
-			<!--control left and right-->
-			<div>
-				<a class="carousel-control-prev" href="#slider" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#slider" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</a>
-			</div>
-		</div>
-		
-		<!--main-->
-		<div class="container-fluid my-3">
+		<header>
 			<div class="row">
-				<div class="col-sm-4">
-					<a href="#"><img src="img/hm.jpg" style="width:100%"/><h3>Huấn luyện viên</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="#"><img src="img/hm.jpg" style="width:100%"/><h3>Huấn luyện viên</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="#"><img src="img/hm.jpg" style="width:100%"/><h3>Huấn luyện viên</h3></a>
-				</div>
+					<a href="#"><img src="image/trainer-banner.jpg" style="width:100%"></a>
 			</div>
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-8 branch">
-				<h2>Trung tâm thể hình</h2>
-				<p>Hiện chúng tôi đã có mặt trên 7 thành phố lớn trên khắp Việt Nam, hãy chọn trung tâm phù hợp nhất để
-				bắt đầu tập luyện với cách giảm cân nhanh nhất của chúng tôi hoặc khám phá thêm về những trung tâm sắp 
-				mở cửa gần nơi bạn sống</p>
-				<hr class="short-line"/>
-				</div>
-			</div>
+		</header>
+		<section class="section1">
 			<div class="container my-5">
 				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<img class="box" src="img/hcm.jpg" style="width:100%;" title="HỒ CHÍ MINH CITY"/>
+					<div class="col-md-6 col-sm-12">
+						<img src="image/al morgan.jpg" style="width:100%;"/>
 					</div>
-					<div class="col-md-6 col-sm-6 box-center">
-						<div class="center">
-							<p>Trải nghiệm tập luyện tại CLB chuẩn 5 sao</p>
-							<h2>GYM TRYM TP.HCM</h2>
-							<hr class="short-line"/>
-							<p>Tận hưởng các dịch vụ cao cấp và các lớp học GYM và Yoga tại GYM-TRYM</p>
-							<p style="margin-top: 50px;"><a href="#">Đăng ký tập thử</a></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row my-5">
-					<div class="col-md-6 col-sm-6 box-center">
-						<div class="center">
-							<p>Trải nghiệm tập luyện tại CLB chuẩn 5 sao</p>
-							<h2>GYM TRYM HÀ NỘI</h2>
-							<hr class="short-line"/>
-							<p>Tận hưởng các dịch vụ cao cấp và các lớp học GYM và Yoga tại GYM-TRYM</p>
-							<p style="margin-top: 50px;"><a href="#">Đăng ký tập thử</a></p>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<img class="box" src="img/hn.jpg" style="width:100%;" title="HÀ NỘI"/>
+					<div class="col-md-6 col-sm-12">
+						<h2>Coaches will help you achieve better results</h2>
+						<hr class="short-line"/>
+						<p>Exercise with a fitness trainer will be much better than having to do it alone,
+						this is a proven system to improve your life and ensure you achieve the highest
+						results of the chapter. submit. episodes.</p>
+						<p>Personal Fitness Trainer reviews your body mass index and identifies what you need
+						to restore your fitness and improve your quality of life and health.</p>
+						<p>Hệ thống của chúng tôi được thiết kế để phù hợp với cuộc sống bận rộn thường ngày,
+						giúp bạn đạt được kết quả tốt nhất sau mỗi buổi tập. </p>
 					</div>
 				</div>
-				
-				<div class="row my-5">
-					<div class="col-md-6 col-sm-6">
-						<img class="box" src="img/danang.jpg" style="width:100%;" title="ĐÀ NẴNG"/>
-					</div>
-					<div class="col-md-6 col-sm-6 box-center">
-						<div class="center">
-							<p>Trải nghiệm tập luyện tại CLB chuẩn 5 sao</p>
-							<h2>GYM TRYM ĐÀ NẴNG</h2>
-							<hr class="short-line"/>
-							<p>Tận hưởng các dịch vụ cao cấp và các lớp học GYM và Yoga tại GYM-TRYM</p>
-							<p style="margin-top: 50px;"><a href="#">Đăng ký tập thử</a></p>
-						</div>
-					</div>
-				</div>
-
+			</div>
+		</section>
+		<section>
+			<div class="text-center">
+				<h2>Meet the top fitness experts</h2>
+				<hr class="short-line"/>
+			</div>
+			<div class="container my-3">
 				<div class="row">
-					<div class="col-md-2">
-					</div>
-					<div class="col-md-8 branch">
-					<h2>Gặp gỡ những chuyên gia thể hình hàng đầu</h2>
-					<p>Dù bạn yêu thích Yoga, đam mê bộ môn Dance đầy sôi động, hay môn võ MMA cực mạnh mẽ. Bạn sẽ luôn được 
-					hướng dẫn bởi những chuyên gia hàng đầu.</p>
-					<hr class="short-line"/>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 box-trainer">
 						<div class="col-md-6 left-trainer">
 							<img src="img/trainer-1.jpg" style="width:100%"/>
 						</div>
 						<div class="col-md-6 right-trainer">
 							<div class="name-title">
 								<h3>AL MORGAN</h3>
-								<p>Quản lý cấp toàn quốc</p>
+								<strong>Personal trainer</strong>
 							</div>
 							<ul class="info-trainer">
-								<li>Chứng nhận từ Học Viện Y Học Thể Thao Quốc Gia (NASM) Hoa Kỳ</li>
-								<li>25 năm huấn luyện thể thao tại Hoa Kỳ, Đức, Hồng Kông, Malaysia, 
-								Singapore, và hiện nay là Việt Nam tại California Fitness & Yoga Centers.</li>
-								<li>Huấn luyện cho nhiều ngôi sao hàng đầu.</li>
+								<li>Certified from the National Institute of Sports Medicine (NASM) USA</li>
+								<li>25 years of sports training in the United States, Germany, Hong Kong, Malaysia,
+									Singapore, and now Vietnam at California Fitness & Yoga Centers.</li>
+								<li>Train for many top stars.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="col-md-6 left-trainer">
-							<img src="img/trainer-2.jpg" style="width:100%"/>
+							<img src="image/trainer-6.jpg" style="width:100%"/>
 						</div>
 						<div class="col-md-6 right-trainer">
 							<div class="name-title">
-								<h3>MINT</h3>
-								<p>Quản lý cấp toàn quốc</p>
+								<h3>TIEU PHUONG</h3>
+								<strong>Personal trainer</strong>
 							</div>
 							<ul class="info-trainer">
-								<li>Chứng nhận từ Học Viện Y Học Thể Thao Quốc Gia (NASM) Hoa Kỳ</li>
-								<li>25 năm huấn luyện thể thao tại Hoa Kỳ, Đức, Hồng Kông, Malaysia, 
-								Singapore, và hiện nay là Việt Nam tại California Fitness & Yoga Centers.</li>
-								<li>Huấn luyện cho nhiều ngôi sao hàng đầu.</li>
+								<li>Experience 7 years, professional training methods of weight loss. The Best of the 2009
+								Bodybuilding Contest, 2012.</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -208,42 +133,95 @@
 				<div class="row my-5">
 					<div class="col-md-6">
 						<div class="col-md-6 left-trainer">
-							<img src="img/trainer-3.jpg" style="width:100%"/>
+							<img src="image/trainer-5.jpg" style="width:100%"/>
 						</div>
 						<div class="col-md-6 right-trainer">
 							<div class="name-title">
 								<h3>ISIDI</h3>
-								<p>Fitness expert</p>
+								<strong>Personal trainer</strong>
 							</div>
 							<ul class="info-trainer">
-								<li>Chứng nhận từ Học Viện Y Học Thể Thao Quốc Gia (NASM) Hoa Kỳ</li>
-								<li>25 năm huấn luyện thể thao tại Hoa Kỳ, Đức, Hồng Kông, Malaysia, 
-								Singapore, và hiện nay là Việt Nam tại California Fitness & Yoga Centers.</li>
-								<li>Huấn luyện cho nhiều ngôi sao hàng đầu.</li>
+								<li>NASM Sports Certificate United States.</li>
+								<li>More than 8 years of bodybuilding experience, direct training for many stars.</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 box-trainer">
 						<div class="col-md-6 left-trainer">
-							<img src="img/trainer-4.jpg" style="width:100%"/>
+							<img src="image/trainer-7.jpg" style="width:100%"/>
 						</div>
 						<div class="col-md-6 right-trainer">
 							<div class="name-title">
-								<h3>ASSIM MANN</h3>
-								<p>Quản lý cấp toàn quốc</p>
+								<h3>LINH TA</h3>
+								<strong>Personal trainer</strong>
 							</div>
 							<ul class="info-trainer">
-								<li>Chứng nhận từ Học Viện Y Học Thể Thao Quốc Gia (NASM) Hoa Kỳ</li>
-								<li>25 năm huấn luyện thể thao tại Hoa Kỳ, Đức, Hồng Kông, Malaysia, 
-								Singapore, và hiện nay là Việt Nam tại California Fitness & Yoga Centers.</li>
-								<li>Huấn luyện cho nhiều ngôi sao hàng đầu.</li>
+								<li>Three international coaches Lesmill, Kettle Bell, Master Technology. 20 years of 
+								training, performance, international sport competition.</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<footer class="text-light">
+			<div class="container-fluid training">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>You want to lose weight</h2>
+							<p>Abdominal or perfect body, we can help you</p>
+							<hr class="short-line" style="margin-left:0;margin-right:0"/>
+							<h4>Exercise program 1 with 1</h4>
+							<p>Will help you achieve your dream body more easily</p>
+							<p id="text">Certified by the NASM Sport & Fitness program from the United States, the Personal Fitness Coach will
+							fully equip you with nutrition advice, tailored exercises specifically for friend.</p>
+							<p>This exercise program combines exercise into a busy lifestyle so you get better, faster results.</p>
+						</div>
+						<div class="col-md-4">
+							<img src="image/hlv-giam-can.jpg" style="width:100%"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="container cele">
+					<h2 class="text-center">Celebrity workout</h2>
+					<hr class="short-line"/>
+					<div class="row" style="padding-top:50px">
+						<div class="col-md-3 img">
+							<img src="image/diem-my.jpg" class="img-circle">
+						</div>
+						<div class="col-md-8 cele-content">
+							<h4>Join practice program of Diem My</h4>
+							<p>Join the training with Al Morgan, who helped Diem My possess a sexy body. Diem My trained six weeks each time with her 
+								personal trainer to maintain her body measurements</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-8 cele-content">
+							<h4>Miss Universe 2015 Pham Huong </h4>
+							<p>Pham Huong kept her body in the Miss Universe 2015 by practicing well with famous coach Isini Shahini. The perfect 
+								combination of cardiovascular and cardiovascular exercises helps the body maintain excellent measurements</p>
+						</div>
+						<div class="col-md-3 img">
+							<img src="image/pham-huong.jpg" class="img-circle">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-3 img">
+							<img src="image/ho-vinh-khoa.jpg" class="img-circle">
+						</div>
+						<div class="col-md-8 cele-content">
+							<h4>Energetic and energetic like Ho Vinh Khoa</h4>
+							<p>We have years of experience in bodybuilding and science to help you achieve a healthy, attractive appearance. 
+								Whether you increase your muscles or the muscles of the six segments. Our coaches will quickly achieve their goal</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class = "bg-dark text-light">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 my-4 link">
