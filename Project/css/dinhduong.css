@@ -1,5 +1,5 @@
 body {
-	
+	font-family:Time New Roman;
 }
 @-webkit-keyframes my {
  0% { color: #000000; } 
@@ -31,7 +31,6 @@ h2{
         animation: my 700ms infinite;
 }
 .content{
-	font-family:self-s;
 	font-size:24px;
 	background:white;
 	float:left;

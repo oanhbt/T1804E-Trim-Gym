@@ -39,7 +39,7 @@ h3{
   		
 }
 .content{
-	font-family:self-s;
+	font-family:Time New Roman;
 	font-size:24px;
 	background:white;
 	float:left;
@@ -50,9 +50,9 @@ h3{
 	float:right;
 	width:26%;
 	background:white;
-	position:fixed;
-	right:20px;
+	
 }
+
 .clear_all{
 	clear:both;
 }
