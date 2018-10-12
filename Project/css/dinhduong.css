@@ -1,5 +1,6 @@
 body {
 	font-family:Time New Roman;
+	background:#CCCCFF;
 }
 @-webkit-keyframes my {
  0% { color: #000000; } 
@@ -32,14 +33,15 @@ h2{
 }
 .content{
 	font-size:24px;
-	background:white;
+	background:#CCCCFF;
 	float:left;
 	width:70%;
 }
 .slidebar{
 	float:right;
 	width:26%;
-	background:white;
+	background:#CCCCFF;
+	
 }
 .clear_all{
 	clear:both;
