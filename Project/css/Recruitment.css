@@ -1,0 +1,41 @@
+header {
+	background-color: #cccccc;
+	position : relative;
+}
+header h2 {
+	position : absolute;
+	top:50%;
+	font-size : 40px;
+	text-decoration: underline overline;
+	text-shadow: 5px 0px 10px #FF0000;
+}
+section h3 {
+    font-weight : 500;
+	font-family: "Roboto", Arial, sans-serif;
+	text-decoration: underline ;
+}
+
+.card-body {
+	
+	font-weight : 250;
+	font-family: "Roboto", Arial, sans-serif;
+}
+.khungphu {
+	position : fixed;
+	z-index : 999;
+	top : 62%;
+	left : 72%;
+	background-color : rgba(0,0,0,0.2);
+}
+.khungphu a {
+	color : black;
+}
+.khungphu ul {
+	font-size : 15px;
+}
+section h4 {
+	background-color : yellow;
+}
+dl {
+	font-size : 15px;
+}

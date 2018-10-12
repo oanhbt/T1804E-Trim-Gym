@@ -1,0 +1,57 @@
+.text-center h3{
+	font-weight:200;
+}
+.text-center h2{
+	font-size:40px;
+}
+.ab{
+	color:#000;
+}
+.txt{
+	max-width:60%;
+	margin:0 auto;
+}
+.sologan{
+	position:absolute;
+	top:20%;
+	left:10%;
+	color:#fff;
+}
+.sologan h2{
+	font-weight:700;
+}
+.carousel-control-prev-icon{
+	height:50px;
+	width:50px;
+}
+.carousel-control-next-icon{
+	height:50px;
+	width:50px;
+}
+.short-line{
+	width:90px;
+	height:5px;
+	background:red;
+}
+.center a{
+	background:#d11919;
+	color:#fff;
+	padding:11px 25px 11px 25px;
+	border-radius:5px;
+	font-size:20px;
+	text-decoration:none;
+}
+.center a:hover{
+	background:rgb(255, 128, 128, 0.9);
+}
+.trainghiem h3{
+	text-align:center;
+	color:red;
+	font-weight:400;
+}
+.trainghiem span{
+	font-weight:900;
+}
+.trainghiem text{
+	color:red;
+}
