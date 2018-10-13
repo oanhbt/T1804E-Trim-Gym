@@ -1,6 +1,4 @@
 body{
-	font-family:Time New Roman;
-	font-size:20px;
 	background:#CCCCFF;
 }
 
@@ -19,8 +17,5 @@ body{
 .clear_all{
 	clear:both;
 }
-.nd1 {
-	height : 304px;
-	overflow-y: scroll;
-}
+
 
