@@ -6,116 +6,27 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-
+		
 		<link rel="stylesheet" href="css/style_dd.css"/>
-
+		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-
-
+		
+		
 		<script src="jquery/jquery-3.3.1.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
-		<script>
-			function GEEKFORGEEKS()
-			{
-			    var name = document.forms["RegForm"]["Name"];
-				 	var phone = document.forms["RegForm"]["Telephone"];
-			    var email = document.forms["RegForm"]["EMail"];
-					var tinnhan = document.forms["RegForm"]["tinnhan"];
-
-
-			    if (name.value == "")
-			    {
-			        window.alert("Please enter your name.");
-			        name.focus();
-			        return false;
-			    }
-
-					if (phone.value == "")
-			    {
-			        window.alert("Please enter your telephone number.");
-			        phone.focus();
-			        return false;
-			    }
-
-			    if (email.value == "")
-			    {
-			        window.alert("Please enter a valid e-mail address.");
-			        email.focus();
-			        return false;
-			    }
-
-					if (!validateEmail(email.value ))
-				    {
-				        window.alert("Please enter a valid e-mail address.");
-				        email.focus();
-				        return false;
-				    }
-
-			    if (tinnhan.value == "")
-			    {
-			        alert("Please enter your course.");
-			        tinnhan.focus();
-			        return false;
-			    }
-
-			    return true;
-			}
-			function validateEmail(email) {
-			    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			    return re.test(String(email).toLowerCase());
-			}
-
-		</script>
-
-
-		<style>
-      header {
-				background-color: #c90000;
-        color : #fff;
-      }
-      header .col-lg-4 {
-        margin-top: 8%;
-
-      }
-      header i{
-        font-size: 25px;
-        font-weight: 400;
-      }
-      .mes {
-        font-size: 20px;
-        margin-top: 5%;
-      }
-      table {
-        font-size: 20px;
-        font-weight: 900;
-
-      }
-      .sodt {
-        color:red;
-      }
-			textarea {
-				height: 150px;
-			}
-			form .btn {
-				width : 49.6%;
-				background-color: red;
-				font-size: 20px;
-				font-weight: 500;
-				color: #fff;
-			}
-    </style>
-
+		
+		
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark ">
 			<a class="navbar-brand logo" href="#">Trim<span>-Gym</span></a>
-
+			
 			<button class="navbar-toggler"
 				data-toggle="collapse"
 				data-target="#navbarResponsive"
 				type="button"><i class="nut"><span class="fa fa-angle-double-down"></span></i></button>
-
+				
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="nav navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
@@ -151,72 +62,12 @@
 			</div>
 		</nav>
 		<!-- Them noi dung trang o day -->
-		<article>
-      <header class="">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <i>" Your feedback is motivation for us to improve ourselves "</i>
-              <br/>
-              <div class="mes">
-                <p>Please contact us from time to time : <br/>
-                +  Monday to Friday : 9am - 6pm</br>
-                +  Saturday : 9am - 6pm</br>
-              We will respond to you after 24 hours with the most dedicated and professional service.</br>
-                Thank you so much !</p>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <img src="image/teamgym.jpg" style="width:100%"/>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section>
-        <div class="container my-4">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2>
-                <i class="fas fa-phone"></i>  <strong>HOTLINE</strong>
-              </h2>
-              <table class="table table-striped text-right">
-                <tr>
-                  <td class="text-left">No1</td>
-                  <td class="sodt">0906 945 152</td>
-                </tr>
-                <tr>
-                  <td class="text-left">No2</td>
-                  <td class="sodt">0965 380 168</td>
-                </tr>
-                <tr>
-                  <td class="text-left">No3</td>
-                  <td class="sodt">0962 742 121</td>
-                </tr>
-              </table>
-            </div>
-            <div class="col-lg-6">
-              <h2>
-                <i class="far fa-edit"></i>  <strong>YOUR FEEDBACK</strong>
-              </h2>
-							<form name="RegForm" action="success.html" onsubmit="return GEEKFORGEEKS()" method="post">
-								<div class="form-group">
-									<p><input class="form-control" type="text" size=65 name="Name" placeholder="Enter your name"/></p>
-									<p><input class="form-control" type="text" size=65 name="Telephone" placeholder="Enter telephone"/></p>
-									<p><input class="form-control" type="text" size=65 name="EMail" placeholder="Enter email"/></p>
-									<p><textarea class="form-control" cols="55" name="tinnhan" placeholder="Comment"></textarea></p>
-									<p><input class="btn cool-btn-cta" type="submit" value="Send" name="Submit">
-							        <input class="btn cool-btn-cta" type="reset" value="Reset" name="Reset">
-							    </p>
-								</div>
-							</form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-	<div id="map">
-	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.021993104867!2d105.78629661422535!3d21.031805985996787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c211395ad%3A0xb76a5183f782f5ed!2zVHLhuqduIFRow6FpIFTDtG5nLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1539496689671" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+		<div>
+		   <header>
+		      <a href="#"><img src="image/page-banner-2.jpg" style="width:100%"></a>
+		   </header>
+		   
+		</div>
 		<footer class = "bg-dark text-light">
 			<div class="container">
 				<div class="row">
@@ -280,14 +131,14 @@
 					</div>
 					<div class="col-sm-3">
 						<a href="http://www.cmg.asia/?utm_source=Web" target="_blank"><img src="image/cmg.jpg"/></a>
-					</div>
+					</div>						
 					<div class="col-sm-3">
 						<a href="http://www.ufcgym.com.vn/?utm_source=Web" target="_blank"><img src="image/ufc-logo.jpg"/></a>
 					</div>
 				</div>
 			</div>
 		</footer>
-
+		
 		<!-- Tao bang menu phu -->
 		<script>
 			$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
@@ -305,7 +156,7 @@
 
 			  return false;
 			});
-
+			
 		</script>
 	</body>
 </html>
