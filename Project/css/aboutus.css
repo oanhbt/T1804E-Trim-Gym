@@ -1,0 +1,53 @@
+blockquote{
+	background: #2f2f2f;
+	padding:50px;
+	color:#fff;
+	margin:70px 0px 30px;
+	position:relative;
+}
+img.open-quote{
+	top:-15px;
+	left:15px;
+	position:absolute;
+}
+img.model-about{
+	margin-left:50px;
+}
+.short-linee{
+	width:90px;
+	height:5px;
+	background:red;
+	float:left;
+}
+.making{
+	top:1145px;
+	position:absolute;
+}
+.content-about{
+	text-align:justify;
+}
+.section-about{
+	background:#f5f5f5;
+	padding:50px 50px;
+}
+.short-line{
+	width:90px;
+	height:5px;
+	background:red;
+}
+.about-register{
+	color:#fff;
+	padding:20px;
+}
+.about-register a{
+	background:#d11919;
+	color:#fff;
+	padding:15px;
+	border-radius:5px;
+	font-size:20px;
+	text-decoration:none;
+}
+
+.about-register a:hover{
+	background:rgb(255, 128, 128, 0.9);
+}
