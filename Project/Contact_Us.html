@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="css/style_dd.css"/>
 		<link rel="stylesheet" href="css/Contactus.css"/>
+		<link rel="stylesheet" href="css/dangky.css"/>
 		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
@@ -16,6 +17,7 @@
 		
 		<script src="jquery/jquery-3.3.1.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/dangky.js"></script>
 		
 		
 		
@@ -59,7 +61,7 @@
 						</ul>
 					</li>
 					<li class="nav-item"><a class="nav-link active" href="ContactUs.html">Contact Us</a></li>
-					<li class="nav-item"><a class="nav-link" id="Impo" href="Try_Register.html">Try Register</a></li>
+					<li class="nav-item"><a class="nav-link" id="Impo" data-toggle="modal" data-target="#myModal">Try Register</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -108,34 +110,7 @@
 					</p>
 					<div class="tb-col output break-560">
 					  <div class="col">
-					    <div class="wpcf7-form-control-wrap">
-						   <div data-sitekey="6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
-						     <div style="width: 304px; height: 78px;">
-							    <div>
-								   <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL&co=aHR0cHM6Ly93d3cuZ29pbXBhY3QuY29tLnNnOjQ0Mw..&hl=en&v=v1538375507325&size=normal&cb=5xazflfuk6bb" width="304" height="78" role="presentation" name="a-shc213jnf2wc" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
-								   </iframe>
-								</div>
-								<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
-								</textarea>
-							 </div>
-						   </div>
-						   <noscript>
-						      "
-	                         <div style="width: 302px; height: 422px;">
-		                       <div style="width: 302px; height: 422px; position: relative;">
-			                     <div style="width: 302px; height: 422px; position: absolute;">
-				                    <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;">
-				                    </iframe>
-								</div>
-									<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-										<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;">
-										</textarea>
-									</div>
-							</div>
-						  </div>
-						  "
-						   </noscript>
-						</div>
+					    
 					  </div>
 					  <div class="col">
 					     <button type="submit" class="btn-1">
@@ -159,6 +134,52 @@
 	  <div id="map">
 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.021993104867!2d105.78629661422535!3d21.031805985996787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c211395ad%3A0xb76a5183f782f5ed!2zVHLhuqduIFRow6FpIFTDtG5nLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1539496689671" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
+	<div id="myModal"  class="modal fade" tabindex="-1" role="dialog">
+			  <div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content container">				
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="">Try Register</h3>
+					<p>Come to Trym-Gym for a free consultation and learn more about the exercise program</p>
+					
+					<div class="radios">
+						  <input id="webform_trial_membership_choice_0" type="radio" name="custom_trial_membership_choice" value="01 ngày  tập luyện" checked="checked">
+						  <label for="webform_trial_membership_choice_0"><span class="check-1"><span class="check-2"></span></span>01 day to train <span class="main-color">Free</span></label> <br>
+						  <input id="webform_trial_membership_choice_2" type="radio" name="custom_trial_membership_choice" value="500,000đ 01 tháng + 02 buổi tập cùng HLV cá nhân">
+						  <label for="webform_trial_membership_choice_2"><span class="check-1"><span class="check-2"></span></span>01 month  + 02 day train with the coach: <span class="main-color">20$</span> </label>
+					</div>
+					
+					<form name="RegForm" action="success.html" onsubmit="return dangkynhanh()" method="post">
+						<div class="form-group row">
+							<div class="col-lg-6">
+								<p><input class="form-control" type="text" size=65 name="Name" placeholder="Enter your name"/></p>
+								<p><input class="form-control" type="text" size=65 name="Telephone" placeholder="Enter telephone"/></p>
+								<p><input class="form-control" type="text" size=65 name="EMail" placeholder="Enter email"/></p>
+								<label for="sel1">Select Trym-Gym's branch:</label>
+								<select class="form-control" name="Subject" id="sel1">
+									<option>No1</option>
+									<option>No2</option>
+									<option>No3</option>
+								</select> 
+								<br>
+								<p><input class="btn cool-btn-cta" type="submit" value="Send" name="Submit">
+								   <input class="btn cool-btn-cta" type="reset" value="Reset" name="Reset">
+								</p>
+								<p>Please read carefully the conditions of use</p>
+							</div>
+							<div class="col-lg-6 khungcanh">
+								<span>HOT LINE : </span><h4 class="hotline text-center">1800-1666</h4>
+								<ul>
+									<li>Your information will be kept private</li>
+									<li>NASM Sport & Fitness from the United States.</li>
+									<li>5-star training room</li>
+								<ul>
+								
+							</div>
+						</div>
+					</form>
+				</div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
     
 		
 		<script type="text/javascript">
@@ -223,8 +244,8 @@
 		</script>
 		<script type="text/javascript" src="https://www.goimpact.com.sg/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
 		<script type="text/javascript" src="https://www.goimpact.com.sg/wp-content/plugins/page-links-to/js/new-tab.min.js?ver=2.9.8"></script>
-		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit&ver=2.0"></script>
 		
+	
 		</div>	
 		<footer class = "bg-dark text-light">
 			<div class="container">
