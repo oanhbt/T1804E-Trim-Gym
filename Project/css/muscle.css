@@ -1,5 +1,7 @@
 body{
 	background:#CCCCFF;
+	font-family:Arial;
+	font-size:18px;
 }
 
 .content{
@@ -7,6 +9,11 @@ body{
 	background:#CCCCFF;
 	float:left;
 	
+}
+.trang{
+	max-width:%
+	margin:0 auto;
+	display:block;
 }
 .slidebar{
 	float:right;
@@ -17,5 +24,6 @@ body{
 .clear_all{
 	clear:both;
 }
+
 
 
