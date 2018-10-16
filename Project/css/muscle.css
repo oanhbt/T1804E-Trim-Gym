@@ -1,12 +1,12 @@
 body{
-	background:#CCCCFF;
+	background:white;
 	font-family:Arial;
 	font-size:18px;
 }
 
 .content{
 	font-size:px;
-	background:#CCCCFF;
+	background:white;
 	float:left;
 	
 }
@@ -18,7 +18,7 @@ body{
 .slidebar{
 	float:right;
 	width:26%;
-	background:#CCCCFF;
+	background:white;
 	
 }
 .clear_all{
