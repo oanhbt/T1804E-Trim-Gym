@@ -1,45 +1,45 @@
 			#myModal {
 				margin-top:5%;
 			}
-			.modal-content{
+			#myModal .modal-content{
 				background-image:url(../image/reg.jpg);
-				
+
 				background-repeat: no-repeat;
 				background-position: center center;
 			}
-			.close {
+			#myModal .close {
 				position:absolute;
 				top:0%;
 				left:96%;
 			}
-			.modal-content h3{
+			#myModal .modal-content h3{
 				color:red;
 				font-family: "Roboto", Arial, sans-serif;
 				font-weight : 900;
 			}
-			.modal-content p {
+			#myModal .modal-content p {
 				color:red;
 			}
-			.main-color {
+			#myModal .main-color {
 				color:red;
 				font-weight : 900;
 				font-family: "Roboto", Arial, sans-serif;
 			}
-			label {
+			#myModal label {
 				color:red;
 			}
-			.form-group label {
+			#myModal .form-group label {
 				font-weight : 900;
 				font-family: "Roboto", Arial, sans-serif;
 			}
-			form .btn {
+			#myModal form .btn {
 				width : 49.2%;
 				background-color: red;
 				font-size: 20px;
 				font-weight: 500;
 				color: #fff;
 			}
-			.khungcanh {
+			#myModal .khungcanh {
 				margin-top:27%;
 				color:red;
 			}
