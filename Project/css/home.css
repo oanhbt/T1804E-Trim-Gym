@@ -17,11 +17,11 @@ body{
 	transform: rotateX(360deg);
 	
 }
-.col-md-4 a:hover {
+.col-sm-4 a:hover {
 	text-decoration:none;	
 }
 
-.col-md-4 h3{
+.col-sm-4 h3{
 	text-align:center;
 	margin-top:-60px;
 	color:#d6d6c2;
