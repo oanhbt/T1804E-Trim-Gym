@@ -1,7 +1,36 @@
 body{
 	background:white;
-	font-family:Arial;
-	font-size:18px;
+	
+	font-size:19px;
+}
+@-webkit-keyframes my {
+ 0% { color: #000000; } 
+ 50% { color: #fff;  } 
+ 100% { color: #000000;  } 
+ }
+ @-moz-keyframes my { 
+ 0% { color: #000000;  } 
+ 50% { color: #fff;  }
+ 100% { color: #000000;  } 
+ }
+ @-o-keyframes my { 
+ 0% { color: #000000; } 
+ 50% { color: #fff; } 
+ 100% { color: #000000;  } 
+ }
+ @keyframes my { 
+ 0% { color: #000000;  } 
+ 50% { color: #fff;  }
+ 100% { color: #000000;  } 
+ } 
+h1{
+         
+         font-size:45px;
+         font-weight:bold;
+        -webkit-animation: my 700ms infinite;
+        -moz-animation: my 700ms infinite; 
+        -o-animation: my 700ms infinite; 
+        animation: my 700ms infinite;
 }
 
 .content{

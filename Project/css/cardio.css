@@ -1,5 +1,6 @@
 body {
-   background:#CCCCFF;
+   background:white;
+   font-size:18px;
 }
 
 
@@ -34,7 +35,7 @@ h3{
   		
 }
 .content{
-	background:#CCCCFF;
+	background:white;
 	float:left;
 	width:70%;
 }
@@ -42,7 +43,7 @@ h3{
 .slidebar{
 	float:right;
 	width:26%;
-	background:#CCCCFF;
+	background:white;
 	
 }
 

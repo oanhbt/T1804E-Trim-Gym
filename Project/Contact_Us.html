@@ -73,6 +73,8 @@
   <h2>Address Trainer</h2>
   <br>
   <!-- Nav tabs -->
+  <div class="col-md-6">
+  <div>
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#hht">Add1</a>
@@ -85,6 +87,7 @@
     </li>
 	
   </ul>
+  </div>
   <div class="tab-content">
     <div id="hht" class="container tab-pane active"><br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.1578880735387!2d-71.45060158502535!3d42.76386601749773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3b11ead99ddd3%3A0xf1199207aa9df99e!2s48+Bridge+St%2C+Nashua%2C+NH+03060!5e0!3m2!1svi!2s!4v1539608290233" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -133,36 +136,7 @@
 							</span>
 					</p>
 					<div class="tb-col output break-560">
-					  <div class="col">
-					    <div class="wpcf7-form-control-wrap">
-						   <div data-sitekey="6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
-						     <div style="width: 304px; height: 78px;">
-							    <div>
-								   <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL&co=aHR0cHM6Ly93d3cuZ29pbXBhY3QuY29tLnNnOjQ0Mw..&hl=en&v=v1538375507325&size=normal&cb=5xazflfuk6bb" width="304" height="78" role="presentation" name="a-shc213jnf2wc" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
-								   </iframe>
-								</div>
-								<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
-								</textarea>
-							 </div>
-						   </div>
-						   <noscript>
-						      "
-	                         <div style="width: 302px; height: 422px;">
-		                       <div style="width: 302px; height: 422px; position: relative;">
-			                     <div style="width: 302px; height: 422px; position: absolute;">
-				                    <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;">
-				                    </iframe>
-								</div>
-									<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-										<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;">
-										</textarea>
-									</div>
-							</div>
-						  </div>
-						  "
-						   </noscript>
-						</div>
-					  </div>
+					 
 					  <div class="col">
 					     <button type="submit" class="btn-1">
 						   Submit
@@ -182,62 +156,11 @@
 		</div>
 		
     </div>
-    <div ng-view id = "mep"> </div>
+    
 		
 		<script type="text/javascript">
 		     
-		var recaptchaWidgets = [];
-		var recaptchaCallback = function() {
-		var forms = document.getElementsByTagName( 'form' );
-		var pattern = /(^|\s)g-recaptcha(\s|$)/;
-
-		for ( var i = 0; i < forms.length; i++ ) {
-		var divs = forms[ i ].getElementsByTagName( 'div' );
-
-		for ( var j = 0; j < divs.length; j++ ) {
-			var sitekey = divs[ j ].getAttribute( 'data-sitekey' );
-
-			if ( divs[ j ].className && divs[ j ].className.match( pattern ) && sitekey ) {
-				var params = {
-					'sitekey': sitekey,
-					'type': divs[ j ].getAttribute( 'data-type' ),
-					'size': divs[ j ].getAttribute( 'data-size' ),
-					'theme': divs[ j ].getAttribute( 'data-theme' ),
-					'badge': divs[ j ].getAttribute( 'data-badge' ),
-					'tabindex': divs[ j ].getAttribute( 'data-tabindex' )
-				};
-
-				var callback = divs[ j ].getAttribute( 'data-callback' );
-
-				if ( callback && 'function' == typeof window[ callback ] ) {
-					params[ 'callback' ] = window[ callback ];
-				}
-
-				var expired_callback = divs[ j ].getAttribute( 'data-expired-callback' );
-
-				if ( expired_callback && 'function' == typeof window[ expired_callback ] ) {
-					params[ 'expired-callback' ] = window[ expired_callback ];
-				}
-
-				var widget_id = grecaptcha.render( divs[ j ], params );
-				recaptchaWidgets.push( widget_id );
-				break;
-					}
-				}
-			}
-		};
-
-		document.addEventListener( 'wpcf7submit', function( event ) {
-		switch ( event.detail.status ) {
-		case 'spam':
-		case 'mail_sent':
-		case 'mail_failed':
-			for ( var i = 0; i < recaptchaWidgets.length; i++ ) {
-				grecaptcha.reset( recaptchaWidgets[ i ] );
-			}
-		}
-		}, false );
-		</script>
+		
 		<script type="text/javascript">
 		    
 		/* <![CDATA[ */
