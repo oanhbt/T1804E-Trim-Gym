@@ -6,39 +6,127 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-		
+
 		<link rel="stylesheet" href="css/style_dd.css"/>
-		<link rel="stylesheet" href="css/Contactus.css"/>
-		
+		<link rel="stylesheet" href="css/dangky.css"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-		
-		
+
+
 		<script src="jquery/jquery-3.3.1.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
 		
-		
-		
+		<script>
+			function GEEKFORGEEKS()
+			{
+			    var namef = document.forms["RegFormf"]["Namef"];
+				var phonef = document.forms["RegFormf"]["Telephonef"];
+			    var emailf = document.forms["RegFormf"]["EMailf"];
+				var tinnhanf = document.forms["RegFormf"]["tinnhanf"];
+
+
+			    if (namef.value == "")
+			    {
+			        window.alert("Please enter your name.");
+			        namef.focus();
+			        return false;
+			    }
+
+					if (phonef.value == "")
+			    {
+			        window.alert("Please enter your telephone number.");
+			        phonef.focus();
+			        return false;
+			    }
+
+			    if (emailf.value == "")
+			    {
+			        window.alert("Please enter a valid e-mail address.");
+			        emailf.focus();
+			        return false;
+			    }
+
+					if (!validateEmail(emailf.value ))
+				    {
+				        window.alert("Please enter a valid e-mail address.");
+				        emailf.focus();
+				        return false;
+				    }
+
+			    if (tinnhanf.value == "")
+			    {
+			        alert("Please enter your coure:");
+			        tinnhanf.focus();
+			        return false;
+			    }
+
+			    return true;
+			}
+			function validateEmail(emailf) {
+			    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			    return re.test(String(emailf).toLowerCase());
+			}
+
+		</script>
+		<script src="js/dangky.js"></script>
+
+		<style>
+      header {
+				background-color: #c90000;
+        color : #fff;
+      }
+      header .col-lg-4 {
+        margin-top: 8%;
+
+      }
+      header i{
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .mes {
+        font-size: 20px;
+        margin-top: 5%;
+      }
+      table {
+        font-size: 20px;
+        font-weight: 900;
+
+      }
+      .sodt {
+        color:red;
+      }
+			textarea {
+				height: 150px;
+			}
+			form .btn {
+				width : 49.6%;
+				background-color: red;
+				font-size: 20px;
+				font-weight: 500;
+				color: #fff;
+			}
+    </style>
+
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 			<a class="navbar-brand logo" href="#">Trim<span>-Gym</span></a>
-			
+
 			<button class="navbar-toggler"
 				data-toggle="collapse"
 				data-target="#navbarResponsive"
 				type="button"><i class="nut"><span class="fa fa-angle-double-down"></span></i></button>
-				
+
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="club.html" data-toggle="dropdown">Club</a>
 						<ul class="dropdown-menu">
-							<li class="nav-item"><a class="dropdown-item" href="no1.html">No1</a></li>
-							<li class="nav-item"><a class="dropdown-item" href="no2.html">No2</a></li>
-							<li class="nav-item"><a class="dropdown-item" href="no3.html">No3</a></li>
+							<li class="nav-item"><a class="dropdown-item" href="no1.html">Nashua</a></li>
+							<li class="nav-item"><a class="dropdown-item" href="no2.html">Ludington</a></li>
+							<li class="nav-item"><a class="dropdown-item" href="no3.html">New York</a></li>
 						</ul>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="trainer.html">Trainer</a></li>
@@ -58,130 +146,119 @@
 							<li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"><a class="nav-link active" href="ContactUs.html">Contact Us</a></li>
-					<li class="nav-item"><a class="nav-link" id="Impo" href="Try_Register.html">Try Register</a></li>
+					<li class="nav-item"><a class="nav-link" href="Contact_Us.html">Contact Us</a></li>
+					<li class="nav-item"><a class="nav-link" id="Impo" data-toggle="modal" data-target="#myModal">Try Register</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!-- Them noi dung trang o day -->
-		<header>
-		   <div>
-					<a href="#"><img src="image/hp-banner-2.jpg" style="width:100%"></a>
+		<article>
+		  <header>
+			   <div>
+				<a href="#"><img src="image/hp-banner-2.jpg" style="width:100%"></a>
 			</div>
-		</header>
-		<div class="container mt-3">
-  <h2>Address Trainer</h2>
-  <br>
-  <!-- Nav tabs -->
-  <div class="col-md-6">
-  <div>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#hht">Add1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#nh">Add2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#qt">Add3</a>
-    </li>
-	
-  </ul>
-  </div>
-  <div class="tab-content">
-    <div id="hht" class="container tab-pane active"><br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.1578880735387!2d-71.45060158502535!3d42.76386601749773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3b11ead99ddd3%3A0xf1199207aa9df99e!2s48+Bridge+St%2C+Nashua%2C+NH+03060!5e0!3m2!1svi!2s!4v1539608290233" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div id="nh" class="container tab-pane fade"><br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.092174677359!2d-86.41921708498298!3d43.95745854072152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881c10a82fe7f603%3A0xd9b06a6e95408bb9!2sAmerica&#39;s+Fitness+Center!5e0!3m2!1svi!2s!4v1539608448569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div id="qt" class="container tab-pane fade"><br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.349830909047!2d-73.97839728509412!3d40.75432984296261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fdf71d54cd%3A0x824fb82f415fb12f!2s228+Park+Ave%2C+New+York%2C+NY+10017!5e0!3m2!1svi!2s!4v1539608499509" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
-		<div class="container">
-		  <div class="row contact-wrap break-640">
-		    <div class="col-md-9 col-xs-8 col">
+		  </header>
+		  <section>
+			<div class="container my-4">
 			  <div class="row">
-			    <div class="contact-form">
-				   <p>
-				     If you have any enquiry, please do not hesitate to contact us. Leave us a message and we will get back to you within 24 hours.
-				   </p>
-				   <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
-				       <div class="screen-reader-response"></div>
-					   <form action="/contact-us/#wpcf7-f4-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-					     <div style="display: none;">
-						   <input type="hidden" name="_wpcf7" value="4">
-						   <input type="hidden" name="_wpcf7_version" value="5.0.1">
-						   <input type="hidden" name="_wpcf7_locale" value="en_US">
-						   <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1">
-						   <input type="hidden" name="_wpcf7_container_post" value="0">
-						 </div>
-					<p>
-						 <label>Your Name</label>
-						   <span class="wpcf7-form-control-wrap your-name">
-						     <input type="text" name="your-name" value size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false"> 
-						   </span>
-						<label>Email</label>
-						   <span class="wpcf7-form-control-wrap your-email">
-						     <input type="email" name="your-email" value size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false">
-						   </span>
-						<label>Your Phone </label>
-							<span class="wpcf7-form-control-wrap your-number">
-							  <input type="tel" name="your-number" value size="40" minlength="8" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-control" aria-required="true" aria-invalid="false">	
-							</span>
-						<label>Message </label>
-							<span class="wpcf7-form-control-wrap your-message">
-							  <textarea name="your-message" cols="30" rows="5" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false"></textarea>
-							</span>
-					</p>
-					<div class="tb-col output break-560">
-					 
-					  <div class="col">
-					     <button type="submit" class="btn-1">
-						   Submit
-						 </button>
-					  </div>
-					</div>
-					<div class="wpcf7-response-output wpcf7-display-none"></div>
-					   </form>
-				   </div>
+				<div class="col-lg-6">
+				  <h2>
+					<i class="far fa-edit"></i>  <strong>CONTACT US FOLLOW:</strong>
+				  </h2>
+								<form name="RegFormf" action="success.html" onsubmit="return GEEKFORGEEKS()" method="post">
+									<div class="form-group">
+										<p><input class="form-control" type="text" size=65 name="Namef" placeholder="Enter your name"/></p>
+										<p><input class="form-control" type="text" size=65 name="Telephonef" placeholder="Enter telephone"/></p>
+										<p><input class="form-control" type="text" size=65 name="EMailf" placeholder="Enter email"/></p>
+										<p><textarea class="form-control" cols="55" name="tinnhanf" placeholder="Comment"></textarea></p>
+										<p><input class="btn cool-btn-cta" type="submit" value="Send" name="Submit">
+										<input class="btn cool-btn-cta" type="reset" value="Reset" name="Reset">
+									</p>
+									</div>
+								</form>
+				</div>
+				<div class="col-lg-6">
+				   <div>
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#hht"><b>Base No1</b></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#nh"><b>Base No2</b></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#qt"><b>Base No3</b></a>
+						</li>
+	
+					</ul>
+				</div>
+			<div class="tab-content">
+			<div id="hht" class="container tab-pane active"><br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.1578880735387!2d-71.45060158502535!3d42.76386601749773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3b11ead99ddd3%3A0xf1199207aa9df99e!2s48+Bridge+St%2C+Nashua%2C+NH+03060!5e0!3m2!1svi!2s!4v1539608290233" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="nh" class="container tab-pane fade"><br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.092174677359!2d-86.41921708498298!3d43.95745854072152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881c10a82fe7f603%3A0xd9b06a6e95408bb9!2sAmerica&#39;s+Fitness+Center!5e0!3m2!1svi!2s!4v1539608448569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="qt" class="container tab-pane fade"><br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.349830909047!2d-73.97839728509412!3d40.75432984296261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fdf71d54cd%3A0x824fb82f415fb12f!2s228+Park+Ave%2C+New+York%2C+NY+10017!5e0!3m2!1svi!2s!4v1539608499509" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			</div>
 				</div>
 			  </div>
 			</div>
-		  </div>	
-		</div>
-		
-          
-		</div>
-		
-    </div>
-    
-		
-		<script type="text/javascript">
-		     
-		
-		<script type="text/javascript">
-		    
-		/* <![CDATA[ */
-		var wpcf7 = {"apiSettings":{"root":"https:\/\/www.goimpact.com.sg\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
-		/* ]]> */
-		</script>
-		<script type="text/javascript" src="https://www.goimpact.com.sg/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
-		<script type="text/javascript" src="https://www.goimpact.com.sg/wp-content/plugins/page-links-to/js/new-tab.min.js?ver=2.9.8"></script>
-		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit&ver=2.0"></script>
-		<div style="z-index: 2000000000; position: relative; width: 300px; height: 480px;">
-			  <iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=v1538375507325&amp;k=6Le2HEwUAAAAAGVpwor9MKZjJjtwraC6wp20y3iL&amp;cb=5vjqsw142lkw" name="c-shc213jnf2wc" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 300px; height: 480px;">
-			   
-			  </iframe>
-			    
-			</div>
-		</div>	
+		  </section>
+		</article>
+		<div id="myModal"  class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content container">				
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3 class="">Try Register</h3>
+				<p>Come to Trym-Gym for a free consultation and learn more about the exercise program</p>
+				
+				<div class="radios">
+					  <input id="webform_trial_membership_choice_0" type="radio" name="custom_trial_membership_choice" value="01 ngày  tập luyện" checked="checked">
+					  <label for="webform_trial_membership_choice_0"><span class="check-1"><span class="check-2"></span></span>01 day to train <span class="main-color">Free</span></label> <br>
+					  <input id="webform_trial_membership_choice_2" type="radio" name="custom_trial_membership_choice" value="500,000đ 01 tháng + 02 buổi tập cùng HLV cá nhân">
+					  <label for="webform_trial_membership_choice_2"><span class="check-1"><span class="check-2"></span></span>01 month  + 02 day train with the coach: <span class="main-color">20$</span> </label>
+				</div>
+				
+				<form name="RegForm" action="success.html" onsubmit="return dangkynhanh()" method="post">
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<p><input class="form-control" type="text" size=65 name="Name" placeholder="Enter your name"/></p>
+							<p><input class="form-control" type="text" size=65 name="Telephone" placeholder="Enter telephone"/></p>
+							<p><input class="form-control" type="text" size=65 name="EMail" placeholder="Enter email"/></p>
+							<label for="sel1">Select Trym-Gym's branch:</label>
+							<select class="form-control" name="Subject" id="sel1">
+								<option>No1</option>
+								<option>No2</option>
+								<option>No3</option>
+							</select> 
+							<br>
+							<p><input class="btn cool-btn-cta" type="submit" value="Send" name="Submit">
+							   <input class="btn cool-btn-cta" type="reset" value="Reset" name="Reset">
+							</p>
+							<p>Please read carefully the conditions of use</p>
+						</div>
+						<div class="col-lg-6 khungcanh">
+							<span>HOT LINE : </span><h4 class="hotline text-center">1800-1666</h4>
+							<ul>
+								<li>Your information will be kept private</li>
+								<li>NASM Sport & Fitness from the United States.</li>
+								<li>5-star training room</li>
+							<ul>
+							
+						</div>
+					</div>
+				</form>
+			</div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<footer class = "bg-dark text-light">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 my-4 link">
-						<h3>Link</h3>
+						<h3>LINK</h3>
 						<ul>
 							<li><a href="Recruitment.html">Recruitment</a></li>
 							<li><a href="Feedback.html">Feedback</a></li>
@@ -190,22 +267,22 @@
 						</ul>
 					</div>
 					<div class="col-md-4 my-4 address">
-						<h3>CƠ SỞ 1</h3>
+						<h3>Base No.1</h3>
 						<ul>
-							<li>Address: Số 1 - Trần Thái Tông- Cầu Giấy - Hà Nội</li>
+							<li>Address: 48 Bridge St, Nashua, NH 03060, USA</li>
 							<li>Phone: 132465798</li>
 						</ul>
 						<hr/>
-						<h3>CƠ SỞ 2</h3>
+						<h3>Base No.2</h3>
 						<ul>
-							<li>Address: Số 3 - Trần Thái Tông- Cầu Giấy - Hà Nội</li>
-							<li>Phone: 132465798</li>
+							<li>Address: 5500 W, 2456, US-10, Ludington, MI 49431, USA</li>
+							<li>Phone: 987654321</li>
 						</ul>
 						<hr/>
-						<h3>CƠ SỞ 3</h3>
+						<h3>Base No.3</h3>
 						<ul>
-							<li>Address: Số 4 - Trần Thái Tông- Cầu Giấy - Hà Nội</li>
-							<li>Phone: 132465798</li>
+							<li>Address: 228 Park Ave, New York, NY 10017, USA</li>
+							<li>Phone: 192837465</li>
 						</ul>
 					</div>
 					<div class="col-lg-3 my-4 ml-5 address">
@@ -240,15 +317,14 @@
 					</div>
 					<div class="col-sm-3">
 						<a href="http://www.cmg.asia/?utm_source=Web" target="_blank"><img src="image/cmg.jpg"/></a>
-					</div>						
+					</div>
 					<div class="col-sm-3">
 						<a href="http://www.ufcgym.com.vn/?utm_source=Web" target="_blank"><img src="image/ufc-logo.jpg"/></a>
 					</div>
 				</div>
 			</div>
-			
 		</footer>
-		
+
 		<!-- Tao bang menu phu -->
 		<script>
 			$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
@@ -266,8 +342,7 @@
 
 			  return false;
 			});
-			
+
 		</script>
-	
 	</body>
 </html>
