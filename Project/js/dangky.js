@@ -39,7 +39,7 @@ function dangkynhanh()
        
     if (what.selectedIndex < 1)                  
     { 
-        alert("Please enter your course."); 
+        alert("Please enter your selecte - Trim Gym's branch."); 
         what.focus(); 
         return false; 
     } 
